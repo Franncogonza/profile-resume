@@ -1,0 +1,12 @@
+<section class="tabs">
+  <div class="tabs__container">
+    <button *ngFor="let tab of tabList" mat-button [ngClass]="{
+        selected: tab.id === selectedTab,
+        'not-selected': tab.id !== selectedTab
+      }" type="button" (click)="setTab(tab.id); onSelectedTab.emit(tab.id)">
+      <h5 #tabText>
+        {{ tab.text }}
+      </h5>
+    </button>
+  </div>
+</section>

@@ -1,0 +1,58 @@
+@import "../../colors.scss";
+
+.tabs {
+  margin-bottom: 50px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  @media (max-width: 500px) {
+    overflow: auto;
+    margin-bottom: 32px;
+  }
+
+  &__container {
+    background-color: $gray;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+
+    @media (max-width: 500px) {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    & button {
+      flex-grow: 1;
+      border-radius: 10px;
+      padding: 5px 10px !important;
+
+      h5 {
+        font-family: "Rubik";
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 !important;
+
+        @media (max-width: 500px) {
+          font-size: 14px;
+        }
+
+        @media (max-width: 400px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.selected {
+  background-color: $accent !important;
+  color: #eeeeee !important;
+}
+
+.not-selected {
+  background-color: $gray !important;
+  color: #000 !important;
+}

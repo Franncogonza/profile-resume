@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'profile-resume';
+
+  tabs: any[] = [
+    {
+      text: 'Owned',
+      id: 'owned',
+    },
+    {
+      text: 'Creations',
+      id: 'collection',
+    },
+    {
+      text: 'Profile Data',
+      id: 'profileData',
+    },
+  ];
+
 }
